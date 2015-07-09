@@ -36,6 +36,7 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
   Meteor.publish("tasks", function () {
     console.log(Tasks.find());
+    return Tasks.find();
   });	
 
 }
